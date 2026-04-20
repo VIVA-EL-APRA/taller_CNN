@@ -10,10 +10,10 @@ env/
 dist/
 build/
 
-# PyTorch
-*.pth
-*.pt
-*.ckpt
+# PyTorch (excepto checkpoints que son necesarios)
+# *.pth
+# *.pt
+# *.ckpt
 
 # Datos grandes (descargar automáticamente)
 data/
