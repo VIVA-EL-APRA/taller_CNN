@@ -1,42 +1,35 @@
-# CNN Image Classifier - Hugging Face Spaces
+# Taller CNN - Hugging Face Space
 
-Web app para probar los modelos CNN entrenados en el taller.
+Web app interactiva para clasificar imágenes usando modelos CNN entrenados.
 
-## Modelos Disponibles
+## 🎯 Modelos Disponibles
 
-| Modelo | Accuracy | Clases |
-|--------|----------|--------|
-| Fashion-MNIST | 93.11% | 10 |
-| CIFAR-10 | 84.91% | 10 |
-| SVHN | 95.33% | 10 |
-| EMNIST | 87.92% | 62 |
-| Tiny ImageNet | 44.51% | 200 |
+| Dataset | Accuracy | Clases | Descripción |
+|---------|----------|--------|------------|
+| Fashion-MNIST | 93.11% | 10 | Ropa y accesorios |
+| CIFAR-10 | 84.91% | 10 | Objetos cotidianos |
+| SVHN | 95.33% | 10 | Números de casas |
+| EMNIST | 87.92% | 62 | Letras y dígitos |
+| Tiny ImageNet | 44.51% | 200 | Imágenes diversas |
 
-## Cómo usar
+## 🚀 Cómo usar
 
 1. Selecciona un modelo del dropdown
 2. Sube una imagen
 3. Click en "Clasificar"
-4. Ve el resultado
+4. ¡Ve el resultado!
 
-## Ejemplo de uso local
+## 💻 Uso local
 
 ```bash
 pip install -r requirements_spaces.txt
 python app.py
 ```
 
-## Despliegue en Hugging Face Spaces
+## 📝 Requisitos
 
-1. Ve a https://huggingface.co/spaces
-2. Crea un nuevo Space (Gradio)
-3. Sube los archivos:
-   - app.py
-   - requirements_spaces.txt
-   - checkpoints/ (modelos entrenados)
-   - models/
-   - dataset_loaders/
-   - training/
-   - evaluation/
-   - utils/
-4. ¡Listo!
+- torch
+- torchvision  
+- gradio
+- pillow
+- numpy
